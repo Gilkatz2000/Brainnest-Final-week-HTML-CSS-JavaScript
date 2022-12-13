@@ -4,14 +4,15 @@ function display(num) {
     input.value += num;
 }
 
-function Clear() {
-    input.value = "";
+function clear() {
+    input.value = ""
 }
 
 function del() {
     input.value  = input.value.slice(0, -1);
 
 }
+
 
 function equal() {
     try {
