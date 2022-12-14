@@ -13,12 +13,11 @@ clearBtn.onclick = () => clear();
 
 function del() {
     input.value  = input.value.slice(0, -1);
-
 }
 
 function equal() {
     try {
-        input.value = eval(input.value);   
+        input.value = Function("return " + input.value)();
     } catch (error) {
         alert("Invalid Input!!!");
     }
